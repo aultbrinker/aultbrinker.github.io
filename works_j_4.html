@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN' 'http://www.w3.org/TR/html4/loose.dtd'>
+<head>
+<!-- 
+when new works alive, you should make new ./works_(e,d,j).html and ./works_(e,d,j).html will be ./works_(e,d,j)_1.html
+with changing body class
+
+when new exhibition will open, you should coment out 
+// * .menu li.exhibit_ {display:none;}
+from style.css and you should make new ./exhibit_(e,d,j).html 
+-->
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name='google' value='notranslate'>
+<meta name='keywords' content='monotype,monotypes,art,モノタイプ'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv='Content-Script-Type' content='text/javascript'>
+<meta http-equiv='Content-Style-Type' content='text/css'>
+<meta name="viewport" content="width=device-width,initial-scale=1"><!- style for smart phone add 2019/07/02 -->
+<link rel='stylesheet' href='./style.css?r5'>
+<link rel='stylesheet' href='./style_lightbox.css'>
+<script src='./jquery.js'></script>
+<!--[if !IE]><!-->
+<script src='./lightbox.js'></script>
+<!--<![endif]-->
+<!--[if gt IE 8]>
+<script src='./lightbox.js'></script>
+<![endif]-->
+<title>Ault Brinker</title>
+</head>
+<body class='works4 japanese'><!----------------------- change home/works/works1/works2/works_next/exhibit/contact english/deutsch/japanese -->
+<div id='switchArea'>
+<ul class='menu en'>
+<li class='home_'><a href='./index.html'>Home</a></li>
+<li class='works_'><a href='./works_e.html'>Works</a></li>
+<li class='exhibit_'><a href='./exhibit_e.html'>Exhibition Info</a></li>
+<li class='contact_'><a href='./contact_e.html'>Contact us</a> </li>
+<li class='blog'><a target='_blank' href='http://aultbrinker.info/blog/'>Blog</a></li>
+</ul>
+<ul class='menu de'>
+<li class='home_'><a href='./index_d.html'>Home</a></li>
+<li class='works_'><a href='./works_d.html'>Werke</a></li>
+<li class='exhibit_'><a href='./exhibit_d.html'>Ausstellungen Info</a></li>
+<li class='contact_'><a href='./contact_d.html'>Kontaktieren Sie uns</a></li>
+<li class='blog'><a target='_blank' href='http://aultbrinker.info/blog/'>Blog</a></li>
+</ul>
+<ul class='menu jp'>
+<li class='home_'><a href='./index_j.html'>ホーム</a></li>
+<li class='works_'><a href='./works_j.html'>作品</a></li>
+<li class='exhibit_'><a href='./exhibit_j.html'>個展情報</a></li>
+<li class='contact_'><a href='./contact_j.html'>Contact us</a></li>
+<li class='blog'><a target='_blank' href='http://aultbrinker.info/blog/'>ブログ</a></li>
+</ul>
+<ul class='langselecter to_home'>
+<li class='lang_e'><a href='./index.html'>English</a></li>
+<li class='lang_d'><a href='./index_d.html'>Deutsch</a></li>
+<li class='lang_j'><a href='./index_j.html'>日本語</a></li>
+</ul>
+<ul class='langselecter to_works'>
+<li class='lang_e'><a href='./works_e.html'>English</a></li>
+<li class='lang_d'><a href='./works_d.html'>Deutsch</a></li>
+<li class='lang_j'><a href='./works_j.html'>日本語</a></li>
+</ul>
+<ul class='langselecter to_works_3'>
+<li class='lang_e'><a href='./works_e_3.html'>English</a></li>
+<li class='lang_d'><a href='./works_d_3.html'>Deutsch</a></li>
+<li class='lang_j'><a href='./works_j_3.html'>日本語</a></li>
+</ul>
+<ul class='langselecter to_works_2'>
+<li class='lang_e'><a href='./works_e_2.html'>English</a></li>
+<li class='lang_d'><a href='./works_d_2.html'>Deutsch</a></li>
+<li class='lang_j'><a href='./works_j_2.html'>日本語</a></li>
+</ul>
+<ul class='langselecter to_works_1'>
+<li class='lang_e'><a href='./works_e_1.html'>English</a></li>
+<li class='lang_d'><a href='./works_d_1.html'>Deutsch</a></li>
+<li class='lang_j'><a href='./works_j_1.html'>日本語</a></li>
+</ul>
+<ul class='langselecter to_works_4'>
+<li class='lang_e'><a href='./works_e_4.html'>English</a></li>
+<li class='lang_d'><a href='./works_d_4.html'>Deutsch</a></li>
+<li class='lang_j'><a href='./works_j_4.html'>日本語</a></li>
+</ul>
+<ul class='langselecter to_works_next'>
+<li class='lang_e'><a href='./works_e_next.html'>English</a></li>
+<li class='lang_d'><a href='./works_d_next.html'>Deutsch</a></li>
+<li class='lang_j'><a href='./works_j_next.html'>日本語</a></li>
+</ul>
+<ul class='langselecter to_exhibit'>
+<li class='lang_e'><a href='./exhibit_e.html'>English</a></li>
+<li class='lang_d'><a href='./exhibit_d.html'>Deutsch</a></li>
+<li class='lang_j'><a href='./exhibit_j.html'>日本語</a></li>
+</ul>
+<ul class='langselecter to_contact'>
+<li class='lang_e'> <a href='./contact_e.html'>English</a></li>
+<li class='lang_d'> <a href='./contact_d.html'>Deutsch</a></li>
+<li class='lang_j'> <a href='./contact_j.html'>日本語</a></li>
+</ul>
+</div><!--div id='switchArea'-->
+<div id='contents'>
+  <br>
+  <br>
+  <div class='contents_works'>
+    <div id='tabnavi'>
+      <ul class='en'>
+        <li class='works_'><a href='./works_e.html'>Shown at the Metropolican Museum of Art, Tokyo</a></li>
+        <li class='works_3_'><a href='./works_e_3.html'>Student Work</a></li>
+        <li class='works_2_'><a href='./works_e_2.html'>"Crossings."</a></li>
+        <li class='works_1_'><a href='./works_e_1.html'>"THE CREDENTIALS OF TIME"</a></li>
+        <li class='works_4_'><a href='./works_e_4.html'>2020</a></li>
+        <!-- li class='works_next_'><a href='./works_e_next.html'>Next Series</a></li-->
+      </ul>
+      <ul class='de'>
+        <li class='works_'><a href='./works_d.html'>Gezeigt im Metropolican Museum of Art, Tokio</a></li>
+        <li class='works_3_'><a href='./works_d_3.html'>Studentenarbeit</a></li>
+        <li class='works_2_'><a href='./works_d_2.html'>"Crossings."</a></li>
+        <li class='works_1_'><a href='./works_d_1.html'>"THE CREDENTIALS OF TIME"</a></li>
+        <li class='works_4_'><a href='./works_d_4.html'>2020</a></li>
+        <!-- li class='works_next_'><a href='./works_d_next.html'>Next Series</a></li-->
+      </ul>
+      <ul class='jp'>
+        <li class='works_'><a href='./works_j.html'> 公募展参加作品</a></li>
+        <li class='works_3_'><a href='./works_j_3.html'>Student Work</a></li>
+        <li class='works_2_'><a href='./works_j_2.html'>"Crossings."</a></li>
+        <li class='works_1_'><a href='./works_j_1.html'>"THE CREDENTIALS OF TIME"</a></li>
+        <li class='works_4_'><a href='./works_j_4.html'>2020</a></li>
+        <!-- li class='works_next_'><a href='./works_j_next.html'>Next Series</a></li-->
+      </ul>
+    </div><!--div id='tabnavi'-->
+
+    <div class='tabcontent tab_works center'> <!-- this is calent left tab  -->
+      <br>
+      <div class='english_txt'>
+        2019 The 87th Exhibition of Japan Print Association<br>
+      </div><!--div class='english_txt'-->
+      <div class='deutsch_txt'>
+        2019 The 87th Exhibition of Japan Print Association<br>
+      </div><!--div class='english_txt'-->
+      <div class='japanese_txt'>
+        2019 日本版画協会第87回版画展<br>
+      </div><!--div class='japanese_txt'-->
+
+        <a href='./IMG_1627.jpeg'     data-lightbox='monotype_s0401' data-title='Cold as ICE'><img src='./IMG_1627.jpeg' width='582' height='480' alt=''></a><br>
+        Cold as ICE<br><br>
+
+      <div class='english_txt'>
+        2017 The 85th Exhibition of Japan Print Association <br>
+      </div><!--div class='english_txt'-->
+      <div class='deutsch_txt'>
+        2017 The 85th Exhibition of Japan Print Association <br>
+      </div><!--div class='english_txt'-->
+      <div class='japanese_txt'>
+        2017 日本版画協会第85回版画展<br>
+      </div><!--div class='japanese_txt'-->
+
+        <a href='./multi_figures.jpeg'     data-lightbox='monotype_s0402' data-title='I know You Wonder'><img src='./multi_figures.jpeg' width='548' height='481' alt=''></a><br>
+        I know You Wonder<br><br>
+    </div><!--div class='tabcontent tab_works'-->
+    <div class='tabcontent tab_works3 center'>
+        <br>
+        <a href='./carrier.jpeg'          data-lightbox='monotype_0301' data-title='The Twelve Virtues: Balance'>    <img src='./carrier.jpeg' width='480' height='534' alt=''></a><br>The Twelve Virtues: Balance<br><br><br>
+        <a href='./measure.jpeg'          data-lightbox='monotype_0302' data-title='The Twelve Virtues: Healing'>    <img src='./measure.jpeg' width='480' height='532' alt=''></a><br>The Twelve Virtues: Healing<br><br><br>
+        <a href='./sweep.jpeg'            data-lightbox='monotype_0303' data-title='The Twelve Virtues: Restoration'><img src='./sweep.jpeg' width='480' height='536' alt=''></a><br>The Twelve Virtues: Restoration<br><br>
+        <a href='./hi_res_sweeper_2.jpeg' data-lightbox='monotype_0304' data-title='Further On Up the Road'>         <img src='./hi_res_sweeper_2.jpeg' width='606' height='480' alt=''></a><br>Further On Up the Road<br><br>
+        <br>
+    </div><!--div class='tabcontent tab_works3 center'-->
+
+    <div class='tabcontent tab_works2'>
+      <div class='center'>
+        <h1>"Crossings: Shown in Berlin, Germany 2019"</h1>
+        <a href='./monotype_201.jpg'     data-lightbox='monotype_0201' data-title='Alone Together'>                 <img src='./monotype_201.jpg' width='512' height='440' alt=''></a><br>Alone Together<br><br>
+        <a href='./monotype_202.jpg'     data-lightbox='monotype_0202' data-title='Winds Shift'>                    <img src='./monotype_202.jpg' width='512' height='433' alt=''></a><br>Winds Shift<br><br>
+        <a href='./monotype_203.jpg'     data-lightbox='monotype_0203' data-title='Each New Day'>                   <img src='./monotype_203.jpg' width='436' height='512' alt=''></a><br>Each New Day<br><br>
+        <a href='./monotype_204.jpg'     data-lightbox='monotype_0204' data-title='Big Fight, Small Reconciliation'><img src='./monotype_204.jpg' width='512' height='439' alt=''></a><br>Big Fight, Small Reconciliation<br><br>
+        <a href='./monotype_205.jpg'     data-lightbox='monotype_0205' data-title='Displaced'>                      <img src='./monotype_205.jpg' width='982' height='278' alt=''></a><br>Displaced<br><br>
+        <a href='./monotype_206.jpg'     data-lightbox='monotype_0206' data-title='Sad Love'>                       <img src='./monotype_206.jpg' width='512' height='439' alt=''></a><br>Sad Love<br><br>
+        <a href='./monotype_207.jpg'     data-lightbox='monotype_0207' data-title='Entropy'>                        <img src='./monotype_207.jpg' width='512' height='438' alt=''></a><br>Entropy<br><br>
+        <a href='./monotype_208.jpg'     data-lightbox='monotype_0208' data-title='Stronger Than'>                  <img src='./monotype_208.jpg' width='512' height='438' alt=''></a><br>Stronger Than<br><br>
+        <a href='./monotype_209.jpg'     data-lightbox='monotype_0209' data-title='Each New Day 2'>                 <img src='./monotype_209.jpg' width='433' height='512' alt=''></a><br>Each New Day 2<br><br>
+        <a href='./monotype_210.jpg'     data-lightbox='monotype_0210' data-title='Each New Day 3'>                 <img src='./monotype_210.jpg' width='439' height='512' alt=''></a><br>Each New Day 3<br><br>
+        <br>
+      </div><!--div class='center'-->
+      <div class='english_txt text550'>
+Artist Statement “Crossings.”<br>
+<br>
+This series of images is called “Crossings.”  In the broadest sense it is about humans crossing paths - a few of our various interactions.  More narrowly it is about how we are managing to be alone while being together. 
+<br>
+<div Align='right'>William Ault Brinker</div>
+      </div><!--div class='english_txt text550'-->
+      <div class='deutsch_txt text550'>
+Artist Statement “Crossings.”<br>
+<br>
+This series of images is called “Crossings.”  In the broadest sense it is about humans crossing paths - a few of our various interactions.  More narrowly it is about how we are managing to be alone while being together. 
+<br>
+<div Align='right'>William Ault Brinker</div>
+      </div><!--div class='deutsch_txt text550'-->
+      <div class='japanese_txt text550'>
+Artist Statement “Crossings.”<br>
+<br>
+This series of images is called “Crossings.”  In the broadest sense it is about humans crossing paths - a few of our various interactions.  More narrowly it is about how we are managing to be alone while being together. 
+<br>
+<div lang='jp' Align='right'>ウイリアム オルト ブリンカー</div>
+      </div><!--div class='japanese_txt text550'-->
+    </div><!--div class='tabcontent tab_works2'-->
+    <div class='tabcontent tab_works1'>
+      <div class='center'>
+        <h1>"THE CREDENTIALS OF TIME: Shown in Tokyo, Japan 2015"</h1>
+        <a href='./monotype_01.jpg' data-lightbox='monotype_01' data-title='said the joker to the thief'>              <img src='./monotype_01.jpg' width='465' height='302' alt=''></a><br>said the joker to the thief<br><br>
+        <a href='./monotype_02.jpg' data-lightbox='monotype_02' data-title='anywhere but in between'>                  <img src='./monotype_02.jpg' width='464' height='304' alt=''></a><br>anywhere but in between<br><br>
+        <a href='./monotype_03.jpg' data-lightbox='monotype_03' data-title='some way out of here'>                     <img src='./monotype_03.jpg' width='300' height='460' alt=''></a><br>some way out of here<br><br>
+        <a href='./monotype_04.jpg' data-lightbox='monotype_04' data-title='sometimes the best map will not guide you'><img src='./monotype_04.jpg' width='300' height='467' alt=''></a><br>sometimes the best map will not guide you<br><br>
+        <a href='./monotype_05.jpg' data-lightbox='monotype_05' data-title='outside in the distance'>                  <img src='./monotype_05.jpg' width='303' height='468' alt=''></a><br>outside in the distance<br><br>
+        <a href='./monotype_06.jpg' data-lightbox='monotype_06' data-title='how long have i been sleeping'>            <img src='./monotype_06.jpg' width='302' height='467' alt=''></a><br>how long have i been sleeping<br><br>
+        <a href='./monotype_07.jpg' data-lightbox='monotype_07' data-title='that you knew me when'>                    <img src='./monotype_07.jpg' width='461' height='301' alt=''></a><br>that you knew me when<br><br>
+        <a href='./monotype_08.jpg' data-lightbox='monotype_08' data-title='sometimes the darkness is your friend'>    <img src='./monotype_08.jpg' width='468' height='298' alt=''></a><br>sometimes the darkness is your friend<br><br>
+        <a href='./monotype_09.jpg' data-lightbox='monotype_09' data-title='1 and 1/2 wandering Jews'>                 <img src='./monotype_09.jpg' width='468' height='294' alt=''></a><br>1 and 1/2 wandering Jews<br><br>
+        <a href='./monotype_10.jpg' data-lightbox='monotype_10' data-title='i am younger than that now'>               <img src='./monotype_10.jpg' width='462' height='301' alt=''></a><br>i am younger than that now<br><br>
+        <a href='./monotype_11.jpg' data-lightbox='monotype_11' data-title='with one hand waving free 1'>              <img src='./monotype_11.jpg' width='293' height='454' alt=''></a>&nbsp;
+        <a href='./monotype_12.jpg' data-lightbox='monotype_12' data-title='with one hand waving free 2'>              <img src='./monotype_12.jpg' width='294' height='454' alt=''></a>&nbsp;
+        <a href='./monotype_13.jpg' data-lightbox='monotype_13' data-title='with one hand waving free 3'>              <img src='./monotype_13.jpg' width='297' height='459' alt=''></a><br>with one hand waving free<br><br>
+      </div><!--div class='center'-->
+      <div class='english_txt text550'>
+Artist Statement “The Credentials of Time”<br>
+<br>
+This series of images began when I noticed aging spots on the back of my hand and thought, “That’s not my beautiful hand.” None of us make it though without scars, wounds and other markings, some of which are visible. I decided to invent a mark-making system that would explore this in an imaginary way.<br>
+<br>
+As the series evolved, I came to explore aging as the experience of finding oneself in a somewhat alien body in an unfamiliar terrain living with a new set of concerns: uncertain balances, memories and nostalgia, maps that don’t guide, journeys that have an ending and some of the other vivid experiences of aging.<br>
+<br>
+I am pleased to show these images across cultures without the encumbrance of language. I believe that, at the end of the day, we have more in common than we have differences.<br>
+<br>
+How the images are made: I begin by painting on flat zinc or acrylic plates with oil-based inks which I mix myself. When the painting is finished I place the plate on the bed of a hand- operated etching press, put a piece of fine art paper on the plate and then run both though the press. The pressure of the press transfers the image from the plate to the paper.<br>
+<br>
+These are called “monotypes” because they are one-of-a-kind images. Monotypes have the beautiful atmospheric glow that ink gets when it is forced into paper. At the same time they have vigorous marks and brush strokes.<br>
+<br>
+Monotypes are particularly suited to the content of this series because the plate incorporates the process of mark-making over time. Every subtle mark and change of mind and erasure and new direction is evident in the finished image.<br>
+<br>
+When they are well-made monotypes are subtle and sophisticated – like a drawing with a long and faded memory.<br>
+<br>
+<div Align='right'>William Ault Brinker</div>
+      </div><!--div class='english_txt text550'-->
+      <div class='deutsch_txt text550'>
+Statement des Künstlers zu "The Credentials of Time" (Die Anzeichen der Zeit)<br>
+<br>
+Diese Bilderserie begann, als ich Altersflecken auf meinem Handrücken bemerkte und dachte: „Das ist nicht meine schöne Hand." Keiner von uns schafft es ohne Narben, Wunden oder anderen Male, von welchen manche sichtbar sind, durch das Leben zu gehen. Ich entschied mich, ein Mal-Erschaffungs-System zu entwickeln, welches dies auf eine imaginäre Art erleben lässt.<br>
+<br>
+Als sich die Serie entwickelte, erlebte ich Alterung als die Erfahrung, sich selbst irgendwie in einem fremden Körper wiederzufinden, der in einem ungewohnten Terrain lebt und neue Bedenken hat: Unsichere Ausgeglichenheit, Erinnerungen und Nostalgie, Karten, die nicht zum Ziel führen, Reisen, die ein Ende haben und einige der weiteren eindringlichen Erlebnisse des Älterwerdens.<br>
+<br>
+Ich freue mich, diese Bilder kulturübergreifend und ohne die Last der Sprache zu zeigen. Ich glaube, dass wir am Ende des Tages mehr Gemeinsamkeiten als Unterschiede haben.<br>
+<br>
+Wie diese Bilder gemacht wurden: Ich beginne damit, mit Öl-basierten Tinten, die ich selbst mische, auf flachen Zink- oder Acryl-Platten zu malen. Wenn das Gemälde fertig ist, lege ich die Platte auf die Unterlage einer handbetriebenen Radierpresse, lege ein Blatt feines Kunst-Papier auf die Platte und lasse beides durch die Presse laufen. Der Druck der Presse überträgt dann das Bild von der Platte auf das Papier.<br>
+<br>
+Diese nennen Sich "Monotypien", da Sie einzigartige Bilder sind. Monotypien haben das wunderschön atmosphärische Leuchten, das Tinte bekommt, wenn Sie in Papier gepresst wird. Gleichzeitig haben sie die kräftigen typischen Kennzeichen und Pinselstriche.<br>
+<br>
+Monotypien sind besonders geeignet, um die Aussage dieser Serie darzustellen, da die Platte den Prozess des Mal-Erschaffens mit der Zeit auch durchlebt. Jedes kleine Detail und jeder Meinungswechsel, jedes Auslöschen und jeder Richtungswechsel ist Teil des fertigen Bildes.<br>
+Gut gemachte Monotypien sind fein und ausgeklügelt – wie eine Zeichnung mit einem langen und verblassten Gedächtnis.<br>  
+<br>
+<div Align='right'>William Ault Brinker</div>
+      </div><!--div class='deutsch_txt text550'-->
+      <div class='japanese_txt text550'>
+所感 「刻の証」<br>
+この一連の作品のイメージが浮かび上がり始めたのは、私が自分の手の甲にしみを見つけて、「すっかり年をとったなぁ」とふと思ったときでした。ですが、傷跡や、けがのない人はいませんし、ときにそれらは目立つ事もあります>。そこで私はこうした痕跡を活かして何か作品を創造することは出来ないかと思いました。<br>
+<br>
+作品を書き進める中、私は歳を重ね、老いるいう事が、自分の体が自分のものでないような、まるで見知らぬ土地で暮らすような感覚として見つめ直すようになりました。それは不調和や、思い出や哀愁、役に立たない地図や、いつ>か終わりの来る旅のようなものでした。<br>
+<br>
+私はこの作品が、異なる文化の間を、言葉の壁を超えていく事を嬉しく思います。最終的には、私たちの間には違いよりも共通点の方が多くあるのではないかと思うのです。<br>
+作品は、まず、平らな真鍮やアクリルのプレートの上に自分で調合した油絵具で描きます。そして、プレートの上に紙を乗せたら手動のプレス機にかけていきます。プレスで圧力をかけることでプレートの図像が紙へと転写されるの>です。<br>
+この独特の方法は「モノタイプ」と呼ばれるものになります。モノタイプは、インクが紙に押し付けられたときにできるとても美しい雰囲気のある輝きや、力強い印象のある痕跡や筆使いの跡が特徴的です。<br>
+<br>
+モノタイプは、質感づくりに費やした過程がプレートに刻まれていくので、この作品の表現には最も適した方法でした。すべての微妙な痕跡や思い付きや修正した部分や新しいやり方が最終的には完成した絵の中に現れてくるのです>。<br>
+うまく書けたモノタイプは確かな存在感と繊細さを合わせ持っています。それはまるでずっと昔の色あせた記憶を伴ったかのようでもあります。<br>
+<br>
+<div lang='jp' Align='right'>ウイリアム オルト ブリンカー</div>
+      </div><!--div class='japanese_txt text550'-->
+<br>
+    </div><!--div class='tabcontent tab_works1'-->
+
+    <div class='tabcontent tab_works4 center'>
+        <br>
+        <a href='./IMG_2020_1.jpeg'           data-lightbox='monotype_0401'  data-title=''>    <img src='./IMG_2020_1.jpeg'  width='590' height='480' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_2.jpeg'           data-lightbox='monotype_0402'  data-title=''>    <img src='./IMG_2020_2.jpeg'  width='481' height='593' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_3.jpeg'           data-lightbox='monotype_0403'  data-title=''>    <img src='./IMG_2020_3.jpeg'  width='480' height='592' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_4.jpeg'           data-lightbox='monotype_0404'  data-title=''>    <img src='./IMG_2020_4.jpeg'  width='583' height='480' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_5.jpeg'           data-lightbox='monotype_0405'  data-title=''>    <img src='./IMG_2020_5.jpeg'  width='597' height='481' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_6.jpeg'           data-lightbox='monotype_0406'  data-title=''>    <img src='./IMG_2020_6.jpeg'  width='585' height='480' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_7.jpeg'           data-lightbox='monotype_0407'  data-title=''>    <img src='./IMG_2020_7.jpeg'  width='480' height='585' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_8.jpeg'           data-lightbox='monotype_0408'  data-title=''>    <img src='./IMG_2020_8.jpeg'  width='588' height='480' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_9.jpeg'           data-lightbox='monotype_0409'  data-title=''>    <img src='./IMG_2020_9.jpeg'  width='581' height='480' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_10.jpeg'          data-lightbox='monotype_04010' data-title=''>    <img src='./IMG_2020_10.jpeg' width='598' height='481' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_11.jpeg'          data-lightbox='monotype_04011' data-title=''>    <img src='./IMG_2020_11.jpeg' width='611' height='481' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_12.jpeg'          data-lightbox='monotype_04012' data-title=''>    <img src='./IMG_2020_12.jpeg' width='480' height='481' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_13.jpeg'          data-lightbox='monotype_04013' data-title=''>    <img src='./IMG_2020_13.jpeg' width='597' height='481' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_14.jpeg'          data-lightbox='monotype_04014' data-title=''>    <img src='./IMG_2020_14.jpeg' width='481' height='606' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_15.jpeg'          data-lightbox='monotype_04015' data-title=''>    <img src='./IMG_2020_15.jpeg' width='480' height='597' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_16.jpeg'          data-lightbox='monotype_04016' data-title=''>    <img src='./IMG_2020_16.jpeg' width='481' height='602' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_17.jpeg'          data-lightbox='monotype_04017' data-title=''>    <img src='./IMG_2020_17.jpeg' width='480' height='584' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_18.jpeg'          data-lightbox='monotype_04018' data-title=''>    <img src='./IMG_2020_18.jpeg' width='481' height='587' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_19.jpeg'          data-lightbox='monotype_04019' data-title=''>    <img src='./IMG_2020_19.jpeg' width='583' height='480' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_20.jpeg'          data-lightbox='monotype_04020' data-title=''>    <img src='./IMG_2020_20.jpeg' width='582' height='481' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_21.jpeg'          data-lightbox='monotype_04021' data-title=''>    <img src='./IMG_2020_21.jpeg' width='584' height='480' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_22.jpeg'          data-lightbox='monotype_04022' data-title=''>    <img src='./IMG_2020_22.jpeg' width='481' height='618' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_23.jpeg'          data-lightbox='monotype_04023' data-title=''>    <img src='./IMG_2020_23.jpeg' width='588' height='480' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_24.jpeg'          data-lightbox='monotype_04024' data-title=''>    <img src='./IMG_2020_24.jpeg' width='584' height='481' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_25.jpeg'          data-lightbox='monotype_04025' data-title=''>    <img src='./IMG_2020_25.jpeg' width='577' height='481' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_26.jpeg'          data-lightbox='monotype_04026' data-title=''>    <img src='./IMG_2020_26.jpeg' width='480' height='607' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_27.jpeg'          data-lightbox='monotype_04027' data-title=''>    <img src='./IMG_2020_27.jpeg' width='480' height='601' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_28.jpeg'          data-lightbox='monotype_04028' data-title=''>    <img src='./IMG_2020_28.jpeg' width='556' height='481' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_29.jpeg'          data-lightbox='monotype_04029' data-title=''>    <img src='./IMG_2020_29.jpeg' width='480' height='598' alt=''></a><br><br><br><br>
+        <a href='./IMG_2020_30.jpeg'          data-lightbox='monotype_04030' data-title=''>    <img src='./IMG_2020_30.jpeg' width='581' height='481' alt=''></a><br><br><br><br>
+        <br>
+
+    </div><!--div class='tabcontent tab_works4 center'>
+
+    <div class='tabcontent tab_next center'>
+        <div class='english_txt'>
+          In production
+        </div>
+        <div class='deutsch_txt'>
+          In Produktion
+        </div>
+        <div class='japanese_txt'>
+          現在作成中
+        </div>
+        <br>
+        <a href='./1023201902.jpeg'   data-lightbox='monotype_s0n01' data-title='Then They Came For…'><img src='./1023201902.jpeg' width='480' height='590' alt=''></a><br>Then They Came For…<br><br>
+        <br>
+        <a href='./IMG_9949.jpeg'     data-lightbox='monotype_s0n02' data-title='When the Weather Becomes the News'><img src='./IMG_9949.jpeg' width='481' height='583' alt=''></a><br>When the Weather Becomes the News<br><br>
+        <br>
+    </div><!--div class='tabcontent tab_next center'-->
+  </div><!--div class='contents_works'-->
+</div><!--div id='contents'-->
+</body>
+</html>

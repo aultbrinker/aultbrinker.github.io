@@ -1,0 +1,38 @@
+#tabnavi {
+  text-align:left;
+  margin-left:10;
+  margin-right:10;
+}
+#tabnavi ul{
+  margin:0;
+  padding:0;
+}
+#tabnavi li{
+  display:inline;
+}
+#tabnavi li a{
+  display:inline-block;
+  background:#dddddd;
+  color:#fff;
+  padding:5px;
+  border-radius:5px 5px 0 0;
+  text-decoration:none;
+}
+#tabnavi li a.act{
+  background:#000;
+  color:#fff;
+}
+#tabnavi li a:hover {
+  background:#000;
+  color:#fff;
+}
+#tabcontent{
+  position: relative; top: -5px; z-index: 1;
+  padding:5px;
+  /*border:1px dotted #ccc;*/
+border:none;
+  background:#000;
+  color:#fff;
+  margin-left:10;
+  margin-right:10;
+}
