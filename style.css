@@ -135,6 +135,8 @@ ul.langselecter {
 .contact .to_exhibit {display:none;}
 
 * .menu li.exhibit_ {display:none;} /* when you need exhibit info coment out this line*/
+* .menu li.contact_ {display:none;} /* when you need econtact_  coment out this line*/
+* .menu li.blog_ {display:none;} /* when you need blog  coment out this line*/
 
 ul.menu li   , ul.langselecter li {display:inline-block;}
 ul.menu li   , ul.langselecter li {*display:inline;}
